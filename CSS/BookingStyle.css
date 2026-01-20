@@ -1,0 +1,257 @@
+/* ----- Navigation bar ----- */
+.neon-title {
+  text-align: center;
+  font-size: 40px;
+  color: #ffd24d;
+  text-shadow:
+    0 0 1px rgba(0,0,0,.4),
+    3px 3px 0 #e100ff,
+    6px 6px 12px rgba(225,0,255,.35);
+  letter-spacing: 2px;
+}
+
+nav {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 10px;
+  border-bottom: 1px solid #ffd24d;
+  box-shadow: 0 0 8px #e100ff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav a {
+  color: #e100ff;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.2s ease;
+}
+
+nav a:hover, nav a.active {
+  color: #ffd24d;
+  text-shadow:  
+    0 0 1px rgba(0,0,0,.4),
+    3px 3px 0 #e100ff,
+    6px 6px 12px rgba(225,0,255,.35);
+  letter-spacing: 2px;
+}
+
+/* ----- Subtitle & body styling ----- */
+.neon-subtitle {
+  text-align: left;
+  font-size: 35px;
+  color: #ffd24d;
+  text-shadow:
+    0 0 1px rgba(0,0,0,.4),
+    3px 3px 0 #e100ff,
+    6px 6px 12px rgba(225,0,255,.35);
+  letter-spacing: 2px;
+  margin-left: 90px;
+  padding-left: 20px;
+  border-left: 5px solid #e100ff;
+}
+
+body {
+  font-family: 'Bevan', serif;
+  color: #ffd24d;
+  letter-spacing: 0.5px;
+  margin: 0;
+  background:#0b101b; 
+  color: #eee;
+}
+
+.wrap { 
+  width:min(980px,92%); 
+  margin: 0 auto; 
+  padding: 1rem 0 2rem; 
+}
+
+/* ----- Form panel ----- */
+.form-panel{
+  background: rgba(255, 255, 255, 0.05); 
+  color: #e0e0e0;
+  border: 2px solid #e100ff; 
+  border-radius: 10px; 
+  box-shadow: 0 0 6px #ffd24d;
+  padding: 24px; 
+  margin-top: 10px;
+}
+
+.section-title{
+  color: #ffd24d;
+  text-shadow:  
+    0 0 1px rgba(0,0,0,.4),
+    3px 3px 0 #e100ff,
+    6px 6px 12px rgba(225,0,255,.35);
+  letter-spacing: 2px;
+  border-left: 4px solid #e100ff;
+  padding-left: 10px;
+}
+
+label{ 
+  display: block; 
+  margin-top: .6rem; 
+}
+
+input, select {
+  width: 97%; 
+  padding: .65rem; 
+  margin-top: .25rem;
+  background: rgba(255,255,255,0.05);
+  color: #ebe8e8; 
+  border: 1px solid #e100ff; 
+  border-radius: 8px;
+}
+
+option {
+  background-color: #0b101b;
+  color: #ebe8e8;
+}
+
+.row { 
+  display:flex; 
+  gap:15px; 
+}
+
+.col { 
+  flex:1; 
+}
+
+.actions { 
+  display:flex; 
+  flex-wrap:wrap; 
+  gap:.6rem; 
+  margin-top:1rem; }
+
+/* ----- Buttons styling ----- */
+.btn {
+  font-family: 'Bevan', serif;
+  font-size: 13px;
+  display: inline-block; 
+  text-decoration: none;  
+  padding: .7rem 1rem; 
+  border-radius: 8px; 
+  border: 1px solid #e100ff; 
+  background: rgba(255,255,255,0.05); 
+  color: #ffd24d;
+}
+
+.btn.primary { 
+  background:#ffd24d; 
+  border-color:#ffd24d; 
+  color:#2a1300; 
+}
+
+.btn.link { 
+  color:#ffd24d; 
+  border-color:#ffd24d; 
+}
+
+.btn:hover{ 
+  color: #ffd24d;
+  border-color: #111;
+  background: #e100ff;
+  transform: scale(1.05);
+  transition: 0.3s ease;
+}
+.receipt-card {
+  margin-top: 25px;
+  padding: 20px;
+  border-radius: 14px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 2px solid #ffd24d;
+  box-shadow: 0 0 6px #ffd24d;
+  color: white;
+  max-width: 420px;
+  animation: fadeIn 0.5s ease;
+}
+
+.receipt-title {
+  color: #ffd24d;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.receipt-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+}
+
+.receipt-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.receipt-actions button {
+    font-family: 'Bevan', serif;
+  background:#ffd24d; 
+  border-color:#ffd24d; 
+  color:#2a1300; 
+}
+
+.receipt-actions button:hover {
+  color: #ffd24d;
+  border-color: #111;
+  background: #e100ff;
+  transform: scale(1.05);
+  transition: 0.3s ease;
+}
+
+.paid-text {
+  text-align: center;
+  color: lightgreen;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+
+/* ----- Footer ----- */
+footer {
+  text-align: center;
+  font-size: 12px;
+  color: #ebe8e8;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-top: 2px solid #e100ff;
+  padding: 20px;
+}
+
+/* ----- Responsiveness ----- */
+@media (max-width: 768px) {
+  nav { 
+    padding: 8px; 
+  }
+  nav a {
+    font-size: 11px;
+  }
+  nav ul { 
+    flex-wrap: wrap; 
+    gap: 10px; 
+  }
+  .row { 
+    flex-direction:column; 
+  }
+  .neon-title { 
+    font-size: 26px; 
+    letter-spacing: 1px; 
+  }
+  .neon-subtitle {
+    font-size: 20px;
+    text-align: left;
+    margin-left: 10px;
+  }
+}

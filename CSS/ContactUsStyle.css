@@ -1,0 +1,272 @@
+/* ----- Navigation bar ----- */
+.neon-title {
+  text-align: center;
+  font-size: 40px;
+  color: #ffd24d;
+  text-shadow:
+    0 0 1px rgba(0,0,0,.4),
+    3px 3px 0 #e100ff,
+    6px 6px 12px rgba(225,0,255,.35);
+  letter-spacing: 2px;
+}
+
+nav {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 10px;
+  border-bottom: 1px solid #ffd24d;
+  box-shadow: 0 0 8px #e100ff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;  
+}
+
+nav a {
+  color: #e100ff;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.2s ease;
+}
+
+nav a:hover, nav a.active {
+  color: #ffd24d;
+  text-shadow:
+    0 0 1px rgba(0,0,0,.4),
+    3px 3px 0 #e100ff,
+    6px 6px 12px rgba(225,0,255,.35);
+  letter-spacing: 2px;
+}
+
+/* ----- Headers & Body ----- */
+body {
+  font-family: 'Bevan', serif;
+  color: #ffd24d;
+  letter-spacing: 0.5px;
+  margin: 0;
+  background:#0b101b; 
+  color: #eee;
+  justify-content: center;
+}
+
+.neon-subheading {
+  text-align: left;
+  font-size: 35px;
+  color: #ffd24d;
+  text-shadow:
+    0 0 1px rgba(0,0,0,.4),
+    3px 3px 0 #e100ff,
+    6px 6px 12px rgba(225,0,255,.35);
+  letter-spacing: 2px;
+  margin-left: 90px;
+  padding-left: 20px;
+  border-left: 5px solid #e100ff;
+}
+
+.neon-title-sub{
+  font-size: 20px;
+  color: #ffd24d;
+  text-shadow:
+    0 0 1px rgba(0,0,0,.4),
+    3px 3px 0 #e100ff,
+    6px 6px 12px rgba(225,0,255,.35);
+  letter-spacing: 2px;
+}
+
+main { 
+  max-width: 950px; 
+  margin: 60px auto; 
+  padding: 10px;
+}
+
+/* ----- Layout ----- */
+.form-group, .form-panel {
+  background: rgba(255, 255, 255, 0.05);
+  color: #e0e0e0;
+  border: 2px solid #e100ff;
+  border-radius: 10px;
+  box-shadow: 0 0 6px #ffd24d;
+  padding: 20px;
+  margin: 25px 0;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.row { 
+  display: flex; 
+  gap: 18px; 
+  padding: 4px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.col { 
+  flex:1; 
+}
+
+/* ----- Labels styling ----- */
+.group-label, .section-title {
+  color: #e0e0e0;
+  font-size: 15px;
+  letter-spacing: 1px;
+  padding: 2px;
+}
+
+/* ----- Fields ----- */
+input, select {
+  width: 30%;
+  height: 12%;
+  padding: 5px;
+  margin-top: 15px;
+  background: rgba(255,255,255,0.05);
+  color: #ebe8e8;
+  border: 1px solid #e100ff;
+  border-radius: 6px;
+}
+
+input[type="radio"] {
+  width: 15px;
+  height: 15px;
+  accent-color: #ffd24d;
+}
+
+option {
+  background-color: #0b101b;
+  color: #ebe8e8;
+}
+
+textarea {
+  width: 99%;
+  height: 20%;
+  padding: 5px;
+  margin-top: 25px;
+  background: rgba(255,255,255,0.05);
+  color: #ebe8e8;
+  border: 1px solid #e100ff;
+  border-radius: 6px;
+}
+
+.actions { 
+  display: flex; 
+  gap: .6rem; 
+}
+
+/* ----- Cinema details ----- */
+.cinema-details {
+  font-size: 15px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+.cinema-details a {
+  color: #e100ff;
+  text-decoration: none;
+}
+
+.cinema-details a:hover {
+  color: #ffd24d;
+  text-decoration: underline;
+}
+
+
+/* ----- Buttons styling ----- */
+.btn {
+  font-family: 'Bevan', sans-serif;
+  padding: .7rem 1rem;
+  border: 1px solid #e100ff;
+  background: rgba(255,255,255,0.05);
+  color: #ffd24d;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.btn.primary {
+  background: #ffd24d;
+  color: #2a1300;
+  border-color: #ffd24d;
+}
+
+.btn:hover { 
+  color: #ffd24d;
+  border-color: #111;
+  background: #e100ff;
+  transform: scale(1.05);
+  transition: 0.3s ease;
+}
+
+/* ----- Footer ----- */
+footer {
+  text-align: center;
+  font-size: 12px;
+  color: #ebe8e8;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-top: 2px solid #e100ff;
+  padding: 20px;
+}
+
+/* ----- Responsiveness ----- */
+@media (max-width: 768px) {
+  nav { 
+    padding: 8px; 
+  }
+  nav a {
+    font-size: 11px;
+  }
+  nav ul { 
+    flex-wrap: wrap; 
+    gap: 10px; 
+  }
+
+  .neon-title { 
+    font-size: 26px; 
+    letter-spacing: 1px; 
+  }
+  .neon-subheading, .neon-title-sub {
+    font-size: 20px;
+    text-align: left;
+    margin-left: 40px;
+  }
+  .cinema-details {
+    font-size: 12px;
+    margin-left: 40px;
+  }
+
+  .row { flex-direction: column; 
+    align-items: stretch; 
+    gap: 12px; 
+  }
+  .col { 
+    width: 100%; 
+  }
+
+  input, select { 
+    width: 100%; 
+    height: auto; 
+  }
+  textarea { 
+    width: 100%;
+    height: auto; 
+  }
+  
+  .form-group, .form-panel { 
+    width: 80%;
+    margin: 40px auto;
+    padding: 40px;
+    background:rgba(255, 255, 255, 0.05); 
+    color: #e0e0e0;
+    border: 2px solid #e100ff;
+    border-radius: 10px;
+    box-shadow: 0 0 6px #ffd24d;
+  }
+
+  .btn { 
+    width: 30%; 
+    font-size: 11px;
+    margin-left: 30px;
+  }
+}

@@ -1,0 +1,176 @@
+/* ----- Navigation bar ----- */
+nav {
+  font-family: 'Bevan', sans-serif;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 10px;
+  border-bottom: 1px solid #ffd24d;
+  box-shadow: 0 0 8px #e100ff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  color: #e100ff;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.2s ease;
+}
+
+nav a:hover, nav a.active {
+  color: #ffd24d;
+  text-shadow:  
+    0 0 1px rgba(0,0,0,.4),
+    3px 3px 0 #e100ff,
+    6px 6px 12px rgba(225,0,255,.35);
+  letter-spacing: 2px;
+}
+
+/* ----- Body & offers section ----- */
+body {
+  background: #0b101b;
+  color: #eee;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  line-height: 25px;
+  margin: 0;
+  text-align: center;
+}
+
+.offers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  padding: 50px 0;
+}
+
+.offer-img {
+  width: 45%;
+  max-width: 450px;
+  border-radius: 12px;
+  border: 1px solid #ffd24d;
+}
+
+/* ----- Title & subtitle styling ----- */
+.cinema-title, .sub-title {
+  text-align: center;
+  font-family: 'Bevan', sans-serif;
+  font-size: 40px;
+  color: #ffd24d;
+  text-shadow:  
+    0 0 1px rgba(0,0,0,.4),
+    3px 3px 0 #e100ff,
+    6px 6px 12px rgba(225,0,255,.35);
+  letter-spacing: 2px;
+  line-height: 40px;
+}
+
+.introduction {
+  padding: 40px;
+}
+
+/* ----- Featured movies ----- */
+.featured {
+  padding: 30px;
+  font-size: 15px;
+}
+
+.movies {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px;
+}
+
+.movies img {
+  width: 190px;
+  border-radius: 8px;
+  border: 2px solid #e100ff;
+  transition: 0.3s ease;
+}
+
+.movies img:hover {
+  transform: scale(1.05);
+  border-color: #ffd24d;
+}
+
+
+/* ----- Explore button styling ----- */
+.explore-button {
+  font-family: 'Bevan', sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  color: #2a1300;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px;
+  border: 1px solid #e100ff;
+  border-radius: 8px;
+  background: #ffd24d;
+  border-color: #ffd24d;
+}
+
+.explore-button:hover {
+  color: #ffd24d;
+  text-decoration: none;
+  border-color: #e100ff;
+  background: #e100ff;
+  transform: scale(1.05);
+  transition: 0.3s ease;
+}
+
+/* ----- Footer ----- */
+footer {
+  font-family: 'Bevan', sans-serif;
+  font-weight: lighter;
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #ebe8e8;
+  font-size: 12px;
+  border-top: 2px solid #e100ff;
+}
+
+/* ----- Responsiveness ----- */
+@media (max-width: 768px) {
+  nav { 
+    padding: 8px; 
+  }
+
+  nav a {
+    font-size: 11px;
+  }
+
+  nav ul { 
+    flex-wrap: wrap; 
+    gap: 10px; 
+  }
+
+  .cinema-title { 
+    font-size: 26px; 
+    letter-spacing: 1px; 
+  }
+  
+  .movies {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .offers {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .offer-img {
+    width: 80%;
+  }
+}
